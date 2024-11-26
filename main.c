@@ -42,45 +42,44 @@ int calcular(int valor1, int valor2, int num, int p){
 	scanf("%d", &resultado);
 	switch(num)
 	{
-		case 0:
-		 if(resultado == soma(valor1,valor2)){
-		    printf("Parabens, Voce acertou!!!");
-            p += 10;
-            printf("%d", p);
-		 } else {
-		    printf("voce errou, contineu tentando!");
-            p -= 10;
+	case 0:
+		if(resultado == soma(valor1,valor2)){
+		    	printf("Parabens, Voce acertou!!!");
+			p += 10;
+		} else {
+		    	printf("voce errou, contineu tentando!");
+                	p -= 10;
 		}
 		break;
 		
-		case 1:
-		 if(resultado==subtracao(valor1,valor2)){
+	case 1:
+		if(resultado==subtracao(valor1,valor2)){
 		 	printf("Parabens, Voce acertou!!!\n");
-            p += 10;
-		 } else {
+            		p += 10;
+		} else {
 		 	printf("Voce errou, continue tentando!\n");
-            p -= 10;
-		 }
+            		p -= 10;
+		}
 		break;
 		
-		case 2:
+	case 2:
 		if(resultado==multiplicacao(valor1,valor2)){
 		 	printf("Parabens, Voce acertou!!!\n");
-		    p += 10;
-		 } else {
+		    	p += 10;
+		} else {
 		 	printf("Voce errou, continue tentando!\n");
-            p -= 10;
-		 }
+            		p -= 10;
+		}
 		break;
 		
-		case 3:
+	case 3:
 		if(resultado==divisao(valor1,valor2)){
 		 	printf("Parabens, Voce acertou!!!\n");
-            p += 10;
-		 } else {
+		        p += 10;
+		} else {
 		 	printf("Voce errou, continue tentando!\n");
-            p -= 10;
-		 }
+            		p -= 10;
+		}
 		break;
 	}
 
@@ -111,7 +110,6 @@ int aleatoriedade(int valor1, int valor2, int p){
             printf("Questao de Divisao: %d / %d\n", valor1, valor2);
             return calcular(valor1, valor2, num, p);
         break;
-
 
     default:
         break;
@@ -169,12 +167,12 @@ void jogar(){
     }
     printf("Deseja sair?(0) nao (1) sim\n");
     scanf("%d", &f);
-    if (f == 1)
-    {
+    	if (f == 1){
         printf("\nSaindo do jogo\n");
         printf("Pontuacao: %d", p);
+		
+    	}
     }
-}
 }
 
 int main(){
