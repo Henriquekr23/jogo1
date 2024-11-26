@@ -162,15 +162,13 @@ void jogar(){
     default:
         printf("Opcao invalida, tente novamente\n");
         break;
-    }
-
+        }
     }
     printf("Deseja sair?(0) nao (1) sim\n");
     scanf("%d", &f);
     	if (f == 1){
-        printf("\nSaindo do jogo\n");
-        printf("Pontuacao: %d", p);
-		
+        	printf("\nSaindo do jogo\n");
+        	printf("Pontuacao: %d", p);
     	}
     }
 }
